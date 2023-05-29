@@ -1,3 +1,7 @@
 export const FETCH_ITEMS_REQUEST = "FETCH_ITEMS_REQUEST";
 export const FETCH_ITEMS_SUCCESS = "FETCH_ITEMS_SUCCESS";
 export const FETCH_ITEMS_ERROR = "FETCH_ITEMS_ERROR";
+
+export const INIT_CART = "INIT_CART";
+export const UPDATE_CART = "UPDATE_CART";
+export const SET_TOTAL_SUM = "SET_TOTAL_SUM";

@@ -4,17 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { applyMiddleware } from "redux";
+import { applyMiddleware, combineReducers, compose } from "redux";
 import thunk from "redux-thunk";
 
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 
-import rootReducer from "./store/reducers/dishesReducer";
+import dishesReducer from "./store/reducers/dishesReducer";
+import cartReducer from './store/reducers/cartReducer';
+
+const rootReducer = combineReducers({
+  dishes: dishesReducer,
+  cart: cartReducer
+});
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = configureStore({
   reducer: rootReducer
-}, applyMiddleware(thunk))
+}, composeEnhancers(applyMiddleware(thunk)))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

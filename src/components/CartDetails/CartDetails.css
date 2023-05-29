@@ -1,0 +1,52 @@
+.CartDetails {
+  border: 1px solid black;
+  max-width: 500px;
+  width: 100%;
+  margin: 10px;
+}
+
+.CartDetails-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.CartDetails-textBox {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.CartDetails-hr {
+  margin: 30px;
+}
+
+.CartDetails-btnBox {
+  display: flex;
+  justify-content: center;
+}
+
+.CartDetails-btn {
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 0;
+
+  height: 50px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: white;
+  background-color: rebeccapurple;
+  box-shadow: 5px 5px 5px 0 rebeccapurple;
+}
+
+.CartDetails-btn:active {
+  background-color: silver;
+  color: rebeccapurple;
+  border: 1px solid rebeccapurple;
+  box-shadow: 0 0 0 0 rebeccapurple;
+}
+
+.CartDetails-btnText {
+  margin: 0 20px;
+}

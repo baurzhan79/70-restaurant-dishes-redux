@@ -1,0 +1,43 @@
+.CartDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.CartDetail-nameQuantity {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+.CartDetail-name {
+  margin-right: 30px;
+}
+
+.CartDetail-price {
+  flex-basis: 50%;
+}
+
+.CartDetail-btn {
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 0;
+
+  width: 40px;
+  height: 20px;
+  font-size: 16px;
+  color: white;
+  background: lightslategray;
+}
+
+.CartDetail-btn:active {
+  background: inherit;
+  color: lightslategray;
+  border: 1px solid lightslategray;
+}
