@@ -5,3 +5,8 @@ export const FETCH_ITEMS_ERROR = "FETCH_ITEMS_ERROR";
 export const INIT_CART = "INIT_CART";
 export const UPDATE_CART = "UPDATE_CART";
 export const SET_TOTAL_SUM = "SET_TOTAL_SUM";
+
+export const INIT_ORDER = "INIT_ORDER";
+export const ORDER_REQUEST = "ORDER_REQUEST";
+export const ORDER_SUCCESS = "ORDER_SUCCESS";
+export const ORDER_FAILURE = "ORDER_FAILURE";

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch, shallowEqual } from "react-redux";
 
 import { fetchItems } from "../../store/actions/dishesActions";
-import { addItem, setTotalSum, removeItem } from "../../store/actions/cartActions";
+import { addItem, setTotalSum, removeItem, initCart } from "../../store/actions/cartActions";
+import { initOrder } from "../../store/actions/ordersActions";
 
 import "./Dishes.css";
 import Spinner from "../../components/UI/Spinner/Spinner";
@@ -11,6 +12,8 @@ import Modal from "../../components/UI/Modal/Modal";
 import ItemsList from "../../components/ItemsList/ItemsList";
 import CartDetails from "../../components/CartDetails/CartDetails";
 import OrderSummary from "../../components/OrderSummary/OrderSummary";
+
+import ContactData from "../ContactData/ContactData";
 
 const Dishes = () => {
     const dispatch = useDispatch();
@@ -57,7 +60,7 @@ const Dishes = () => {
                 totalSum={totalSum}
                 deliveryAmount={deliveryAmount}
             />
-            Contact data will be here
+            <ContactData />
         </>
     );
 
@@ -73,6 +76,18 @@ const Dishes = () => {
     const placeOrderHandler = () => {
         if (!modalIsDisplayed) showModal();
     }
+
+
+    // =========================================================
+    const ordered = useSelector(state => state.orders.ordered);
+
+    useEffect(() => {
+        if (ordered) {
+            closeModal();
+            dispatch(initOrder());
+            dispatch(initCart());
+        }
+    }, [dispatch, ordered]);
 
     // =========================================================
     if (loading) return (<Spinner />);

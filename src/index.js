@@ -12,10 +12,12 @@ import { configureStore } from "@reduxjs/toolkit";
 
 import dishesReducer from "./store/reducers/dishesReducer";
 import cartReducer from './store/reducers/cartReducer';
+import ordersReducer from './store/reducers/ordersReducer';
 
 const rootReducer = combineReducers({
   dishes: dishesReducer,
-  cart: cartReducer
+  cart: cartReducer,
+  orders: ordersReducer
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
