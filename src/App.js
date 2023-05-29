@@ -1,9 +1,8 @@
-import './App.css';
+import Dishes from "./containers/Dishes/Dishes";
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Dishes />
   );
 }
 
