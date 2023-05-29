@@ -1,0 +1,11 @@
+.ItemsList {
+  border: 1px solid black;
+  max-width: 500px;
+  width: 100%;
+  margin: 10px;
+}
+
+.ItemsList-title {
+  font-weight: bold;
+  text-align: center;
+}

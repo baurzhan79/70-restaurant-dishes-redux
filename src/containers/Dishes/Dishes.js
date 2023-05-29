@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchItems } from "../../store/actions/dishesActions";
 
+import "./Dishes.css";
 import Spinner from "../../components/UI/Spinner/Spinner";
+import ItemsList from "../../components/ItemsList/ItemsList";
 
 const Dishes = () => {
     const dispatch = useDispatch();
@@ -15,17 +17,25 @@ const Dishes = () => {
     }, [dispatch]);
 
     useEffect(() => {
-        console.log("dishes: ", dishes);
-    }, [dishes]);
-
-    useEffect(() => {
         if (errorMsg !== null) console.log("Error with request: ", errorMsg);
     }, [errorMsg]);
+
+    const addItemHandler = (item) => {
+        console.log("[addItemHandler]", item);
+    }
 
     if (loading) return (<Spinner />);
     else
         return (
             <>
+                <div className="Dishes">
+                    <ItemsList
+                        title={"Dishes"}
+                        iconCartSrc={"./icon-cart.png"}
+                        itemsList={dishes}
+                        onAddItem={(item) => addItemHandler(item)}
+                    />
+                </div>
             </>
         )
 }

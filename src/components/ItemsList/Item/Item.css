@@ -1,0 +1,64 @@
+.Item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.Item-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Item-imgBox {
+  width: 150px;
+  height: 150px;
+}
+
+.Item-img {
+  display: block;
+  width: 100%;
+}
+
+.Item-btnBox {
+  padding-top: 20px;
+}
+
+.Item-description {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Item-btn {
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  border-radius: 10px; 
+  border: 0;
+
+  height: 50px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: white; 
+  background-color: #195ABB;
+  box-shadow: 1px 1px 3px 1px black;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.Item-btn:active {
+  background-color: deepskyblue;
+  color: #195ABB;
+  border: 1px solid #195ABB;
+  box-shadow: 0 0 0 0 #195ABB;
+}
+
+.Item-btnText {
+  margin: 0 10px;
+}
