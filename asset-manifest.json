@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/restaurant-dishes-redux/static/css/main.ecd9786f.css",
-    "main.js": "/restaurant-dishes-redux/static/js/main.fa1f11d3.js",
-    "static/js/787.9a080e0a.chunk.js": "/restaurant-dishes-redux/static/js/787.9a080e0a.chunk.js",
-    "index.html": "/restaurant-dishes-redux/index.html",
-    "main.ecd9786f.css.map": "/restaurant-dishes-redux/static/css/main.ecd9786f.css.map",
-    "main.fa1f11d3.js.map": "/restaurant-dishes-redux/static/js/main.fa1f11d3.js.map",
-    "787.9a080e0a.chunk.js.map": "/restaurant-dishes-redux/static/js/787.9a080e0a.chunk.js.map"
+    "main.css": "/70-restaurant-dishes-redux/static/css/main.ecd9786f.css",
+    "main.js": "/70-restaurant-dishes-redux/static/js/main.3d2f316d.js",
+    "static/js/787.9a080e0a.chunk.js": "/70-restaurant-dishes-redux/static/js/787.9a080e0a.chunk.js",
+    "index.html": "/70-restaurant-dishes-redux/index.html",
+    "main.ecd9786f.css.map": "/70-restaurant-dishes-redux/static/css/main.ecd9786f.css.map",
+    "main.3d2f316d.js.map": "/70-restaurant-dishes-redux/static/js/main.3d2f316d.js.map",
+    "787.9a080e0a.chunk.js.map": "/70-restaurant-dishes-redux/static/js/787.9a080e0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecd9786f.css",
-    "static/js/main.fa1f11d3.js"
+    "static/js/main.3d2f316d.js"
   ]
 }
