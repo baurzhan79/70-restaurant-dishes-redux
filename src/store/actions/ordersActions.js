@@ -24,6 +24,7 @@ export const createOrder = order => {
             dispatch(orderRequest());
             await axiosOrders.post("/orders.json", order);
             dispatch(orderSuccess());
+            console.log("order", order);
         } catch (error) {
             dispatch(orderFailure(error));
         }
